@@ -13,21 +13,7 @@ import { requirePropFactory } from "@material-ui/core";
 
 const ListItems = () => {
 
-const options = {
-  method: 'GET',
-  url:'https://famous-quotes4.p.rapidapi.com/random',
-  params: {
-    query: 'stranger',
-    offset: '0',
-    limit_titles: '50',
-    limit_suggestions: '20',
-    lang: 'en'
-  },
-  headers: {
-    'X-RapidAPI-Key': '6cc96101f0msh68000712dbcdf8bp1517f4jsnc46fafde93fb',
-    'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
-  }
-};
+
 
 
 
@@ -35,8 +21,8 @@ useEffect(() => {
 
   const getData=async()=>{
     try{
-      const data=await fetch(options.url);
-      console.log(data);
+      // const data=await fetch(options.url);
+      // console.log(data);
     }catch(err){
       console.log(err);
     }
