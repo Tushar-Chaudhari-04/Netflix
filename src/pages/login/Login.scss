@@ -1,0 +1,82 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(39, 34, 34, 0) 0%,
+      rgba(0, 0, 0, 1.5) 100%
+    ),
+    url("https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg");
+  background-size: cover;
+  position: relative;
+  .top {
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .netflixLogo {
+        height: 100px;
+      }
+    }
+  }
+
+  .container{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#ffff;
+
+    form{
+      width:300px;
+      height:350px;
+      padding:30px;
+      border-radius: 5px;
+      //background-color:var(--main-color);
+      background-color: rgba(0, 0, 0,0.6);
+      // filter: brightness(80%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      input{
+        height:40px;
+        border-radius: 5px;
+        background-color: gray;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        color:white;
+        &::placeholder{
+          color:lightgray;
+        }
+        font-weight: 540;
+      }
+
+      button{
+        height: 40px;
+        border-radius: 5px;
+        border:none;
+        background-color: #e50914;
+        color:whitesmoke;
+        padding:10px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor:pointer;
+        margin-bottom:10px;
+      }
+
+      span{
+        color:lightgray;
+        b{
+          color:#ffff;
+        }
+      }
+    }
+  }
+}

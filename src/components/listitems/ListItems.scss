@@ -1,0 +1,83 @@
+.listItems {
+  width: 225px;
+  height: 120px;
+  background-color: var(--main-color);
+  // background-color:white;
+  margin-right: 5px;
+  overflow: hidden;
+  position:relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  video{
+    width:100%;
+    height:140px;
+    object-fit: cover;
+    position:absolute;
+    left:0;
+    top:0;
+    border:0.5px solid black;
+  }
+
+  &:hover {
+    width: 325px;
+    height: 300px;
+    color: whitesmoke;
+    box-shadow: -1px 5px 20px 14px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -1px 5px 20px 14px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 5px 20px 14px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    img {
+      height: 140px;
+    }
+  }
+
+  .items-info{
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    .icons{
+      display:flex;
+      margin-bottom: 10px;
+      .itemIcon{
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-right:10px;
+        padding:5px;
+        font-size: 1rem;
+      }
+    }
+
+    .itemsInfoTop{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color:gray;
+
+      span{
+        margin-right: 5px;
+      }
+      .limit{
+        border: 1px solid gray;
+        padding:1px 3px;
+        margin:0 5px;
+      }
+    }
+
+    .itemDesc{
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .genere{
+      font-size: 14px;
+      color:lightgray;
+    }
+  }
+}
